@@ -60,6 +60,7 @@ $positionAbsolute: absolute;
     width: $fullWidth; 
     height: 645px;
     margin-top: 50px; 
+
     img{
         display: $blockDisplay;
         margin: 0 auto;
@@ -84,7 +85,9 @@ $positionAbsolute: absolute;
         margin: 10px auto;
         width: 70%;
     }
-
+}
+.background .background__waves{
+    display: none;
 }
 .slick-slide img {
     display: block;
@@ -118,6 +121,10 @@ $positionAbsolute: absolute;
         background-color: #EC4133; 
         width: $fullWidth; 
         height: 645px; 
+        .background__cup{
+            display: $blockDisplay;
+            margin-top: 100px;
+        }
         p {
             text-align: $centerText;
             color: white;
@@ -126,10 +133,9 @@ $positionAbsolute: absolute;
             font-size: 20px;
             padding-top: 27px;
         }
-        .background__img{
-            margin: 200px auto 40px auto;
-            display: $blockDisplay;
-            padding-top: 200px;
+        .background__waves{
+            width: 100%;
+            display: block;
         }
     }
     .intro{
