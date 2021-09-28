@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/newstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+    <title>W-Canvas</title>
+</head>
+<body>
+    <div class="intro">     
+        <div class="intro__info">   
+            <h4><b>ABOUT US</b></h4>
+            <h1>Meet Our <span class="intro__info--focus"> Team </span></h1>
+        </div>
+        <div class="rectangle">
+        </div>
+    </div>
+
+
+    <div class="pencil">
+        <img src="img/red-line.png" alt="Red Line">
+        <img src="img/red-pencil.png" alt="Red Pencil" class="pencil--position">
+    </div>
+
+    <div class="main">
+        <div class="main__profiles">
+            <img src="img/william-warren.png" alt="Foto William">
+            <p class="profile--name">William Warren</p>
+            <p class="profile--desc">Founder and CEO</p>
+        </div>
+        <div class="main__profiles">
+            <img src="img/mag-easterbrookn.png" alt="Foto Meg">
+             <p class="profile--name">Meg Easterbrookn</p>
+             <p class="profile--desc">Director of Operations</p>
+        </div>
+        <div class="main__profiles">
+            <img src="img/brandon-jones.png" alt="Foto Brandon">
+             <p class="profile--name">Brandon Jones</p>
+             <p class="profile--desc">Animator</p>
+        </div>
+        <div class="main__profiles">
+            <img src="img/alejo-porras.png" alt="Foto Alejo">
+             <p class="profile--name">Alejo Porras</p>
+             <p class="profile--desc">Creative Lead</p>
+        </div>
+        <div class="main__profiles" style="display: none;">
+            <img src="img/william-warren.png" alt="Foto William">
+            <p class="profile--name">William Warren</p>
+            <p class="profile--desc">Founder and CEO</p>
+        </div>
+
+    </div>
+    <div class="background">
+        <img src="img/ice-cup.png" alt="" class="background__img">
+        <div class="footer--desc">
+            <p>Make you next <b>event better!</b></p>
+        </div>
+        <p>Book a Sketch Effect Live Artist for your next virtual meeting, event, or webinar.</p>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.main').slick({
+
+            responsive: [
+            {
+                breakpoint: 1921,
+                settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false,
+                }
+                },
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false,
+                }
+                },{
+                breakpoint: 910,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false,
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                }
+    }
+  ]
+});
+        document.querySelector(".slick-track").removeAttribute('style');
+
+    </script>
+    </body>
+
+</html>

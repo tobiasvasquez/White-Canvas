@@ -1,0 +1,187 @@
+$primaryFont: 'Yanone Kaffeesatz', sans-serif;
+$secondaryFont: 'Lato', sans-serif;
+$lightWeight: 400;
+$lighterWeight: 300;
+$centerText: center;
+$whiteColor: white;
+$fullWidth: 100%;
+$blockDisplay: block;
+$rectangleBackground: #e7e7e7;
+$smallFontSize: 18px;
+$highHeight: 56px;
+$positionAbsolute: absolute;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.intro__info{
+    text-align: $centerText;
+    h1{
+        font-family: $primaryFont;
+        font-weight: $lighterWeight;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    h4{
+        font-family: $secondaryFont;
+        font-weight: $lighterWeight;
+        font-size: 16px;
+        line-height: $highHeight;
+    }
+
+}
+.rectangle{
+    height: 25px;
+    width: 228px;
+    background-color: $rectangleBackground;
+    margin: -30px auto 0px auto;
+}
+.pencil img{
+    display: none;
+}
+.profile--name{
+    font-family:$primaryFont;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: $lighterWeight;
+    text-align: $centerText;
+}
+.profile--desc{
+    font-family: $secondaryFont;
+    font-weight: $lightWeight;
+    font-size: $smallFontSize;
+    line-height: 21,6px;
+    text-align: $centerText;
+}
+.background{
+    background-color: #EC4133; 
+    width: $fullWidth; 
+    height: 645px;
+    margin-top: 50px; 
+    img{
+        display: $blockDisplay;
+        margin: 0 auto;
+    }
+    p {
+        text-align: $centerText;
+        color: white;
+        font-family: $secondaryFont;
+        font-weight: $lighterWeight;
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 27px;
+        width: 71%;
+        margin: 0 auto;
+    }
+    .footer--desc p {
+        text-align: $centerText;
+        color: white;
+        font-family:$primaryFont;
+        font-size: 40px;
+        line-height: 47.44px;
+        margin: 10px auto;
+        width: 70%;
+    }
+
+}
+.slick-slide img {
+    display: block;
+    padding-left: 50px;
+}
+@media (min-width: 500px){
+    .rectangle{
+        margin: -30px ​auto 0px auto;
+    }
+}
+@media (min-width: 768px){
+    .main{
+        margin-bottom: 100px;
+        margin-top: 150px;
+    }
+    .profile--desc{
+        font-family: $secondaryFont;
+        font-weight: $lightWeight;
+        font-size: $smallFontSize;
+        line-height: 21,6px;
+        margin: 0;
+    }
+    .profile--name{
+        font-family:$primaryFont;
+        font-size: 26px;
+        line-height: 50px;
+        font-weight: $lightWeight;
+        margin: 0;
+    }
+    .background{
+        background-color: #EC4133; 
+        width: $fullWidth; 
+        height: 645px; 
+        p {
+            text-align: $centerText;
+            color: white;
+            font-family: $secondaryFont;
+            font-weight: $lightWeight;
+            font-size: 20px;
+            padding-top: 27px;
+        }
+        .background__img{
+            margin: 200px auto 40px auto;
+            display: $blockDisplay;
+            padding-top: 200px;
+        }
+    }
+    .intro{
+        margin-left: 155px;
+        margin-top: 150px;
+
+        .intro__info{
+                text-align: unset;
+                h1{
+                    font-family:$primaryFont;
+                    font-weight: $lightWeight;
+                    font-size: 75px;
+                    line-height: 60px;
+                }
+                h4{
+                    font-family: $secondaryFont;
+                    font-weight: $lightWeight;
+                    font-size: $smallFontSize;
+                    line-height: $highHeight;
+                }
+                .intro__info{
+                    margin-left: 30px;
+                }
+                .intro__info--focus{
+                    font-weight: 700;
+                }
+            }
+    }
+    .pencil{
+        position: $positionAbsolute!important;
+        left: 79.28%;
+        right: 7.19%;
+        top: 25.68%;
+        display: $blockDisplay!important;
+        img{
+            display: $blockDisplay;
+        }
+        .pencil--position{
+            display: $blockDisplay!important;
+            position: $positionAbsolute!important;
+            left: 156px;
+            right: 7.19%;
+            top: -39px;
+        }
+    }
+    .rectangle{
+        height: 42px;
+        width: 391px;
+        background-color: $rectangleBackground;
+        margin: -25px 0px  0px -30px;
+    }
+
+
+
+}
